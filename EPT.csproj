@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01214A79-3553-41EF-84E3-AF946BBB9832}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EPT</RootNamespace>
+    <AssemblyName>EPT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animacion2Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animacion2Level2.Designer.cs">
+      <DependentUpon>Animacion2Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimacionLevel1Pt1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimacionLevel1Pt1.Designer.cs">
+      <DependentUpon>AnimacionLevel1Pt1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimacionPt2Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimacionPt2Level1.Designer.cs">
+      <DependentUpon>AnimacionPt2Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="END.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="END.Designer.cs">
+      <DependentUpon>END.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMenu.Designer.cs">
+      <DependentUpon>GameMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1Info.Designer.cs">
+      <DependentUpon>Level1Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1Quiz.Designer.cs">
+      <DependentUpon>Level1Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2Info.Designer.cs">
+      <DependentUpon>Level2Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2Quiz.Designer.cs">
+      <DependentUpon>Level2Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2Video.Designer.cs">
+      <DependentUpon>Level2Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadThis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadThis.Designer.cs">
+      <DependentUpon>ReadThis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solutions.Designer.cs">
+      <DependentUpon>Solutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestYourSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestYourSkills.Designer.cs">
+      <DependentUpon>TestYourSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TryAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TryAgain.Designer.cs">
+      <DependentUpon>TryAgain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Animacion2Level2.resx">
+      <DependentUpon>Animacion2Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimacionLevel1Pt1.resx">
+      <DependentUpon>AnimacionLevel1Pt1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimacionPt2Level1.resx">
+      <DependentUpon>AnimacionPt2Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="END.resx">
+      <DependentUpon>END.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMenu.resx">
+      <DependentUpon>GameMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1Info.resx">
+      <DependentUpon>Level1Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1Quiz.resx">
+      <DependentUpon>Level1Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2Info.resx">
+      <DependentUpon>Level2Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2Quiz.resx">
+      <DependentUpon>Level2Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2Video.resx">
+      <DependentUpon>Level2Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadThis.resx">
+      <DependentUpon>ReadThis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions.resx">
+      <DependentUpon>Solutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestYourSkills.resx">
+      <DependentUpon>TestYourSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TryAgain.resx">
+      <DependentUpon>TryAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melting-the-earth-ecology-environmental-protection-earth-illustrator-png-image-and-clipart-global-warming-png-564_798.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1410611-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58-585599_environment-clipart-environmental-protection-medio-ambiente-y-biologia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\try-again-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-light-sparkles-background-with-copyspace_1017-20091.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
